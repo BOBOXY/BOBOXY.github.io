@@ -29,8 +29,16 @@
 <meta property="og:image" content="https://boboxy.github.io/images/profile.jpg">
 <meta property="og:image" content="https://boboxy.github.io/images/2024IGC.jpg">
 <meta property="og:image" content="https://boboxy.github.io/images/2019Yunnan.jpg">
+<meta property="og:image" content="https://boboxy.github.io/images/gallery/DSC01695.jpeg">
+<meta property="og:image" content="https://boboxy.github.io/images/gallery/DSC02311.jpeg">
+<meta property="og:image" content="https://boboxy.github.io/images/gallery/DSC02579-01.jpeg">
+<meta property="og:image" content="https://boboxy.github.io/images/gallery/DSC05663-01.jpeg">
+<meta property="og:image" content="https://boboxy.github.io/images/gallery/DSC06358-01.jpeg">
+<meta property="og:image" content="https://boboxy.github.io/images/gallery/DSC08557.jpeg">
+<meta property="og:image" content="https://boboxy.github.io/images/gallery/DSC08968-01.jpeg">
+<meta property="og:image" content="https://boboxy.github.io/images/gallery/IMG_8419_polarr.jpeg">
 <meta property="article:published_time" content="2026-02-25T02:00:00.000Z">
-<meta property="article:modified_time" content="2026-03-02T01:40:09.002Z">
+<meta property="article:modified_time" content="2026-05-09T06:13:01.688Z">
 <meta property="article:tag" content="About me">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://boboxy.github.io/images/profile.jpg">
@@ -131,7 +139,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#education"><span class="nav-number">1.</span> <span class="nav-text">education</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#presentations"><span class="nav-number">2.</span> <span class="nav-text">presentations</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#extras"><span class="nav-number">3.</span> <span class="nav-text">extras</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#publications"><span class="nav-number">4.</span> <span class="nav-text">publications</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#education"><span class="nav-number">1.</span> <span class="nav-text">education</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#publications"><span class="nav-number">2.</span> <span class="nav-text">publications</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#presentations"><span class="nav-number">3.</span> <span class="nav-text">presentations</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#extras"><span class="nav-number">4.</span> <span class="nav-text">extras</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gallery"><span class="nav-number">5.</span> <span class="nav-text">gallery</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -229,7 +237,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-03-02 09:40:09" itemprop="dateModified" datetime="2026-03-02T09:40:09+08:00">2026-03-02</time>
+      <time title="修改时间：2026-05-09 14:13:01" itemprop="dateModified" datetime="2026-05-09T14:13:01+08:00">2026-05-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -285,6 +293,20 @@
   margin: 0.35rem 0 0.6rem;
   color: #556872;
   font-style: italic;
+}
+
+/* 个人标语样式 */
+/* Personal motto style */
+.academic-motto {
+  margin: 2.3rem 0 0.8rem;
+  padding: 1.1rem 0;
+  color: #344853;
+  font-size: 1.55rem;
+  font-style: italic;
+  line-height: 1.35;
+  text-align: center;
+  border-top: 1px solid #dbe3e8;
+  border-bottom: 1px solid #dbe3e8;
 }
 
 /* 外链和页面内导航链接 */
@@ -393,6 +415,27 @@
   border: 1px solid #d6e0e6;
 }
 
+/* 鸟类照片墙：用于展示野外观察和摄影照片 */
+/* Bird gallery: displays field observation and photography images */
+.academic-gallery {
+  column-count: 3;
+  column-gap: 1rem;
+  margin-top: 0.2rem;
+}
+
+.academic-gallery figure {
+  break-inside: avoid;
+  margin: 0 0 1rem;
+}
+
+.academic-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  border: 1px solid #d6e0e6;
+}
+
 /* 移动端布局：改为单栏并缩小图片 */
 /* Mobile layout: switches to one column and smaller images */
 @media (max-width: 768px) {
@@ -411,8 +454,18 @@
     height: 150px;
   }
 
+  .academic-gallery {
+    column-count: 2;
+  }
+
   .academic-name {
     font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .academic-gallery {
+    column-count: 1;
   }
 }
 </style>
@@ -449,11 +502,16 @@
 <!-- In-page quick navigation links -->
 <div class="academic-quick-links">
   <a href="#education">education</a>
+  <a href="#publications">publications</a>
   <a href="#presentations">presentations</a>
   <a href="#extras">extras</a>
-  <a href="#publications">publications</a>
+  <a href="#gallery">gallery</a>
 </div>
   </div>
+
+  <!-- 个人标语：作为独立栏目突出显示 -->
+  <!-- Personal motto: highlighted as an independent section -->
+  <div class="academic-motto">Always explore something new</div>
 
   <!-- 教育经历：左侧文字，右侧头像 -->
   <!-- Education section: text on the left, profile photo on the right -->
@@ -470,6 +528,14 @@
       <img src="/images/profile.jpg" alt="Yibo Zhou profile photo" />
     </div>
   </div>
+
+  <!-- 论文列表：仅文字列表展示 -->
+  <!-- Publications list: text-only list display -->
+  <h2 id="publications">publications</h2>
+  <ul class="academic-list">
+    <li><span class="academic-year">2025.</span> <strong>Yibo Zhou</strong>; Xudong Hou; Yanhong Pan*. Estimating minimum sample size for detecting phenotypic dimorphism using computational simulations. <em>Paleobiology</em>. <a href="https://doi.org/10.1017/pab.2025.10049" target="_blank" rel="noopener">doi</a></li>
+    <li><span class="academic-year">2024.</span> <strong>Yibo Zhou</strong>; Yanhong Pan*; Min Wang*; Xiaoli Wang; Xiaoting Zheng; Zhonghe Zhou*. Fossil evidence sheds light on sexual selection during the early evolution of birds. <em>Proceedings of the National Academy of Sciences</em>. <a href="https://doi.org/10.1073/pnas.2309825120" target="_blank" rel="noopener">doi</a></li>
+  </ul>
 
   <!-- 学术报告：左侧文字，右侧会议照片 -->
   <!-- Presentations section: text on the left, conference photo on the right -->
@@ -502,13 +568,39 @@
     </div>
   </div>
 
-  <!-- 论文列表：仅文字列表展示 -->
-  <!-- Publications list: text-only list display -->
-  <h2 id="publications">publications</h2>
-  <ul class="academic-list">
-    <li><span class="academic-year">2025.</span> <strong>Yibo Zhou</strong>; Xudong Hou; Yanhong Pan*. Estimating minimum sample size for detecting phenotypic dimorphism using computational simulations. <em>Paleobiology</em>. <a href="https://doi.org/10.1017/pab.2025.10049" target="_blank" rel="noopener">doi</a></li>
-    <li><span class="academic-year">2024.</span> <strong>Yibo Zhou</strong>; Yanhong Pan*; Min Wang*; Xiaoli Wang; Xiaoting Zheng; Zhonghe Zhou*. Fossil evidence sheds light on sexual selection during the early evolution of birds. <em>Proceedings of the National Academy of Sciences</em>. <a href="https://doi.org/10.1073/pnas.2309825120" target="_blank" rel="noopener">doi</a></li>
-  </ul>
+  <!-- 鸟类照片墙：用于展示观察和摄影记录 -->
+  <!-- Bird gallery: displays observation and photography records -->
+  <h2 id="gallery">gallery</h2>
+  <p>
+    Birding and wildlife photography from field observations.
+  </p>
+  <div class="academic-gallery">
+    <figure>
+      <img src="/images/gallery/DSC01695.jpeg" alt="Bird photograph DSC01695" />
+    </figure>
+    <figure>
+      <img src="/images/gallery/DSC02311.jpeg" alt="Bird photograph DSC02311" />
+    </figure>
+    <figure>
+      <img src="/images/gallery/DSC02579-01.jpeg" alt="Bird photograph DSC02579-01" />
+    </figure>
+    <figure>
+      <img src="/images/gallery/DSC05663-01.jpeg" alt="Bird photograph DSC05663-01" />
+    </figure>
+    <figure>
+      <img src="/images/gallery/DSC06358-01.jpeg" alt="Bird photograph DSC06358-01" />
+    </figure>
+    <figure>
+      <img src="/images/gallery/DSC08557.jpeg" alt="Bird photograph DSC08557" />
+    </figure>
+    <figure>
+      <img src="/images/gallery/DSC08968-01.jpeg" alt="Bird photograph DSC08968-01" />
+    </figure>
+    <figure>
+      <img src="/images/gallery/IMG_8419_polarr.jpeg" alt="Bird photograph IMG_8419_polarr" />
+    </figure>
+  </div>
+
 </div>
 
     </div>
